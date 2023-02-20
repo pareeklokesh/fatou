@@ -82,16 +82,23 @@
 				</div>
 				<div class="notification">
 					<ul class="d-flex align-items-center">
-						<li>
+						<li class="mobile-none">
+							<button class="toggle-menu">
+								<span></span>
+								<span></span>
+								<span style="margin:0;"></span>
+							</button>
+						</li>
+						<li class="mobile-none-1">
 							<a href="#"><img src="assets/img/profile.png" width="20" /></a>
 						</li>
-						<li>
+						<li class="mobile-none-1">
 							<a href="#"><i class="fas fa-envelope"></i><span class="noti-count">10</span></a>
 						</li>
-						<li>
+						<li class="mobile-none-1">
 							<a href="#"><i class="fa fa-bell"></i><span class="noti-count">10</span></a>
 						</li>
-						<li class="">
+						<li class="mobile-none-1">
 							<a href="#"><i class="fa fa-flag"></i><span class="noti-count">10</span></a>
 						</li>
 					</ul>
@@ -112,7 +119,7 @@
 	<div class="row" style="padding-right: 13px;">
 		<div class="col-12 user-details">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="w-100 d-flex">
 					<div class="employe-pro">
 						<img src="assets/img/profile.png">
@@ -127,14 +134,14 @@
 					</div>
 				</div>
 				</div>
-				<div class="col-3">
+				<div class="col-6 col-lg-3">
 					<ul class="employee-social" style="min-height: 28px;"></ul>
 					<span class="user-about">Highest Education</span>
 							<p class="emp-des">Master in Science</p>
 							<span class="user-about">Salary Range</span>
 							<p class="emp-des">$120,000 - 140,000</p>
 				</div>
-				<div class="col-3">
+				<div class="col-6 col-lg-3">
 					<ul class="d-flex employee-social justify-content-end">
 						<li>
 							<a href="#"><i class="fab fa-linkedin-in" style="color: #38c5f2;"></i></a>
@@ -165,7 +172,7 @@
 
 	<div class="row employ-row" style="padding-right: 13px;">
 		<div class="row" style="flex-shrink: inherit;width: inherit;max-width: inherit;padding-right: inherit;padding-left: inherit;margin-top: inherit;padding: 0;">
-		<div class="col-3">
+		<div class="col-md-6 col-lg-3">
 			<div class="w-100 matchabillity">
 				<h4>Matchabillity</h4>
 				<div class="w-100">
@@ -193,7 +200,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-3">
+		<div class="col-md-6 col-lg-3">
 			<div class="w-100 matchabillity">
 				<h4>Culture Fit</h4>
 				<div class="w-100">
@@ -226,7 +233,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-md-6 col-lg-3">
 			<div class="w-100 matchabillity">
 				<h4 class="matchabillity-subtitle"><i class="fa fa-user"></i> Job details</h4>
 				
@@ -252,7 +259,7 @@
 			</div>
 		</div>
 
-		<div class="col-3">
+		<div class="col-md-6 col-lg-3">
 			<div class="w-100 matchabillity">
 				<h4 class="matchabillity-subtitle"><i class="fa fa-user"></i> Job details</h4>
 				
@@ -284,7 +291,7 @@
 	</div>
 
 	<div class="row justify-content-center" style="margin-bottom: 25px;">
-		<div class="w-auto d-flex">
+		<div class="w-auto d-flex" style="flex-wrap: wrap;justify-content: center;">
 			<a href="#" class="save-btn">Request<br> Interview</a>
 			<a href="#" class="save-btn">Reject</a>
 			<a href="#" class="save-btn">Send<br> Message</a>
@@ -292,6 +299,11 @@
 		</div>
 	</div>
 
+<script>
+	$(".toggle-menu").click(function(){
+		$(".sidebar-left").toggleClass("sidebar-left-active");
+	});
+</script>
 
 </div>
 </body>
