@@ -457,6 +457,28 @@ img {
   scrollbar-color: #48126a #fff;
   scrollbar-width: thin;
 }
+.save-btn {
+  box-shadow: 0 2px 4px #757575;
+  background: #fff;
+  color: #48126a;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  padding: 4px 15px;
+  line-height: 18px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7px;
+  min-width: 110px;
+  transition: all .4s linear;
+}
+.save-btn:hover {
+  background: #48126a;
+  color: #fff;
+}
+
+
 
 
 
